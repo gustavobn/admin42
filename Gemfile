@@ -2,12 +2,14 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5.1'
+gem 'rails', '5.0.0.beta1'
 
-gem 'activeadmin', github: 'tjgrathwell/activeadmin'
-#, branch: 'rails5'
-# Plus integrations with:
-gem 'devise'
+# formtastic patch
+gem 'formtastic', github: 'gustavobn/formtastic', branch: 'patch-1'
+# activeadmin w/ rails 5 compatibility
+gem 'activeadmin', github: 'gustavobn/activeadmin', require: ['activeadmin']
+# devise w/ rails 5 compatibility
+gem 'devise', github: 'gustavobn/devise'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
